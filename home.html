@@ -4,14 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - My Personal Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Faster+One&family=Inria+Serif&family=Inter:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/home.css">
 </head>
 <body>
     <header>
         <h3>Kali</h3>
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
         <nav>
-            <ul>
+            <ul id="menuList">
                 <li><a href="home.html">Home</a></li>
-                <li><a href="aboutme.html">Aboutme</a></li>
+                <li><a href="aboutme.html">About Me</a></li>
                 <li><a href="education.html">Education</a></li>
                 <li><a href="hobby.html">Hobby</a></li>
                 <li><a href="adventure.html">Adventure</a></li>
@@ -19,38 +26,28 @@
         </nav>
     </header>
 
-    <div >
-        
+    <div class="content">
         <img src="./images/myphoto.jpg" alt="This is my photo">
-        
-        <div>
+        <div class="text">
             <h1>Welcome to My Personal Website!</h1>
             <p>
                 Hi! I'm Kalkidan Adeba. I'm passionate about exploring new hobbies, 
                 pursuing my education, and embarking on adventures. Check out the other 
                 pages to learn more about my journey!
             </p>
-            <div>
-                <a href="aboutme.html">
-                    </a>
-             <button>
-                        About Me
-              </button>
-                
-            </div>
         </div>
-        
     </div>
+    <button onclick="location.href='aboutme.html'">About Me</button> 
+
     <footer>
         <p>Contact Information</p>
         <ul>
-            
-                <li>Email: kalkidanadeba5@gmail.com</li>    
-                <li>Telegram Username: @batu1621</li>
-                <li>Phone N<ins>o</ins>: 0993594635</li>
-            
+            <li>Email: kalkidanadeba5@gmail.com</li>    
+            <li>Telegram Username: @batu1621</li>
+            <li>Phone No: 0993594635</li>
         </ul>
     </footer>
 
+    <script src="javascript/script.js"></script>
 </body>
 </html>

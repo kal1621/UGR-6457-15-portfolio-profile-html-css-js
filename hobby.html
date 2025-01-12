@@ -4,14 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hobbies - My Personal Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Faster+One&family=Inria+Serif&family=Inter:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/hobby.css">
 </head>
 <body>
     <header>
         <h3>Kali</h3>
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
         <nav>
-            <ul>
+            <ul id="menuList">
                 <li><a href="home.html">Home</a></li>
-                <li><a href="aboutme.html">Aboutme</a></li>
+                <li><a href="aboutme.html">About Me</a></li>
                 <li><a href="education.html">Education</a></li>
                 <li><a href="hobby.html">Hobby</a></li>
                 <li><a href="adventure.html">Adventure</a></li>
@@ -20,56 +27,66 @@
     </header>
 
     <h1>My Hobbies</h1>
-    <p>
-        Hobbies are a wonderful way to express creativity and enjoy life outside of work. Here are some of my favorite hobbies.
-    </p>
 
-   
-    <div >
-        <img src="./images/photo_2024-11-23_15-56-41.jpg" alt="picture of best animation movie">
-        <p><small>My favorite animation movie</small></p>
-        <ul>
-            <li>Watching Animation Movies:I have a deep appreciation for animation films, as they combine art, 
-                storytelling, and creativity in unique ways. Whether it's a classic Disney film or a modern anime,
-                 I enjoy the diverse styles and themes that animation offers. These movies not only entertain me
-                  but also inspire my imagination and often convey meaningful messages that resonate with audiences 
-                  of all ages.</li>
-        </ul>
+    <div class="hobby-container">
+        <figure>
+            <img src="./images/photo_2024-11-23_15-56-41.jpg" alt="picture of best animation movie">
+            <small>My favorite animation movie</small>
+        </figure>
+        <div class="content">
+            <ul>
+                <li>Watching Animation Movies: I have a deep appreciation for animation films, as they combine art, 
+                    storytelling, and creativity in unique ways. Whether it's a classic Disney film or a modern anime,
+                    I enjoy the diverse styles and themes that animation offers. These movies not only entertain me
+                    but also inspire my imagination and often convey meaningful messages that resonate with audiences 
+                    of all ages.</li>
+            </ul>
+        </div>
     </div>
 
-    <div>
-        <img src="./images/dec.jpg" alt="picture while decorating" >
-        <p><small>Decorating home for christmass</small></p>
-        <ul>
-            <li>Decorating My House:I find joy in creating a beautiful living space through home decoration. 
-                I love experimenting with different styles, colors, and arrangements to make my home a reflection 
-                of my personality. Whether it's rearranging furniture, adding decorative items, or choosing the
-                 right lighting, I enjoy the process of transforming a space into a warm and inviting environment. 
-                 This hobby allows me to express my creativity while also providing a sense of comfort and 
-                 tranquility in my daily life.</li>
-        </ul>
+    <div class="hobby-container">
+        <figure>
+            <img src="./images/dec.jpg" alt="picture while decorating">
+            <small>Decorating home for Christmas</small>
+        </figure>
+        <div class="content">
+            <ul>
+                <li>Decorating My House: I find joy in creating a beautiful living space through home decoration. 
+                    I love experimenting with different styles, colors, and arrangements to make my home a reflection 
+                    of my personality. Whether it's rearranging furniture, adding decorative items, or choosing the
+                    right lighting, I enjoy the process of transforming a space into a warm and inviting environment. 
+                    This hobby allows me to express my creativity while also providing a sense of comfort and 
+                    tranquility in my daily life.</li>
+            </ul>
+        </div>
     </div>
 
-    <div>
-        <audio controls >
-            <source src="./audio/Ethiopian_Orthodox_Mezmur_by_zemari_Hawaz_Mariam_Beye(48k).mp3" type="audio/mpeg">
+    <div class="hobby-container">
+        <div class="audio-container">
+            <audio controls>
+                <source src="./audio/Ethiopian_Orthodox_Mezmur_by_zemari_Hawaz_Mariam_Beye(48k).mp3" type="audio/mpeg">
             </audio>
-            <p><small>My favorite mezmur</small></p>
-        <ul>
-            <li>Listening to Mezmur:I enjoy listening to mezmure. This genre of music, which often features spiritual 
-                and uplifting themes, resonates with my emotions and provides a sense of peace and reflection. I find
-                that listening to mezmure helps me relax, boosts my mood, and connects me to my cultural roots. 
-                Whether I'm studying, relaxing at home, or driving, mezmure is often the soundtrack to my day.</li>
-        </ul>
+            <small>My favorite mezmur</small>
+        </div>
+        <div class="content">
+            <ul>
+                <li>Listening to Mezmur: I enjoy listening to mezmur. This genre of music, which often features spiritual 
+                    and uplifting themes, resonates with my emotions and provides a sense of peace and reflection. I find
+                    that listening to mezmur helps me relax, boosts my mood, and connects me to my cultural roots. 
+                    Whether I'm studying, relaxing at home, or driving, mezmur is often the soundtrack to my day.</li>
+            </ul>
+        </div>
     </div>
+
     <footer>
         <p>Contact Information</p>
         <ul>
             <li>Email: kalkidanadeba5@gmail.com</li>    
-                <li>Telegram Username: @batu1621</li>
-                <li>Phone N<ins>o</ins>: 0993594635</li>
+            <li>Telegram Username: @batu1621</li>
+            <li>Phone No: 0993594635</li>
         </ul>
     </footer>
 
+    <script src="javascript/script.js"></script>
 </body>
 </html>

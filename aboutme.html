@@ -4,14 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me - My Personal Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Faster+One&family=Inria+Serif&family=Enter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/aboutme.css">
 </head>
 <body>
     <header>
         <h3>Kali</h3>
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
         <nav>
-            <ul>
+            <ul id="menuList">
                 <li><a href="home.html">Home</a></li>
-                <li><a href="aboutme.html">Aboutme</a></li>
+                <li><a href="aboutme.html">About Me</a></li>
                 <li><a href="education.html">Education</a></li>
                 <li><a href="hobby.html">Hobby</a></li>
                 <li><a href="adventure.html">Adventure</a></li>
@@ -19,34 +26,34 @@
         </nav>
     </header>
 
-    <div>
-        <div >
-            <h2 >My Background</h2>
+    <div class="content">
+        <div class="column">
+            <h2>My Background</h2>
             <p>
                 I was born and grew up in a city called Gondar, 
                 a place rich in history and culture. I completed 
                 my education there, attending school from kindergarten 
                 up to grade 9. Throughout my upbringing, I was surrounded
-                 by a wonderful family and friends who have supported me in
-                  every step of my journey. 
+                by a wonderful family and friends who have supported me in
+                every step of my journey. 
             </p>
-            <img src="./images/gondar.jpg" alt="picture of place of birth">
-          <p><small>Gondar City</small></p>
+            <img src="./images/gondar.jpg" alt="Picture of Gondar City">
+            <p><small>Gondar City</small></p>
         </div>
-         <div>
-            <h2 >My Achievment</h2>
+        <div class="column">
+            <h2>My Achievement</h2>
             <p>
                 Throughout my journey, I have been fortunate to achieve several milestones
-                 that I am proud of. One of my significant accomplishments was participating 
-                 in the Ethiopian Spelling Bee competition alongside my best friend, where 
-                 I earned a medal for my performance. 
+                that I am proud of. One of my significant accomplishments was participating 
+                in the Ethiopian Spelling Bee competition alongside my best friend, where 
+                I earned a medal for my performance. 
             </p>
             <div>
-                <iframe src="./videos/spelling-bee.mp4" ></iframe>
+                <iframe src="./videos/spelling-bee.mp4" frameborder="0" allowfullscreen></iframe>
                 <p><small>Sample video of the competition</small></p>
             </div>
         </div>
-        <div>
+        <div class="column">
             <h2>My Goal</h2>
             <p>
                 As an aspiring software engineer, my goal is to develop innovative technology solutions 
@@ -55,20 +62,21 @@
                 to meaningful projects and continuously grow in my field.
             </p>
             <div>
-                <iframe src="./videos/campanies.mp4"></iframe>
-                <p><small>Famous campanies known for their best software design</small></p>
+                <iframe src="./videos/campanies.mp4" frameborder="0" allowfullscreen></iframe>
+                <p><small>Famous companies known for their best software design</small></p>
             </div>
         </div>
-
     </div>
+
     <footer>
         <p>Contact Information</p>
         <ul>
             <li>Email: kalkidanadeba5@gmail.com</li>    
-                <li>Telegram Username: @batu1621</li>
-                <li>Phone N<ins>o</ins>: 0993594635</li>
+            <li>Telegram Username: @batu1621</li>
+            <li>Phone No: 0993594635</li>
         </ul>
     </footer>
 
+    <script src="javascript/script.js"></script>
 </body>
 </html>
